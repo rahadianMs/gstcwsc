@@ -41,6 +41,13 @@
                     </ul>
                 </nav>
             </div>
+             <!-- Logout Button -->
+            <div class="p-4 mt-auto border-t border-gray-700">
+                <a href="#" id="logout-btn" class="flex items-center p-3 rounded-lg text-red-400 hover:bg-red-900/50 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                    <span>Logout</span>
+                </a>
+            </div>
         </aside>
 
         <!-- Main Content Area -->
@@ -50,7 +57,7 @@
                 <header class="flex justify-between items-center">
                     <div>
                         <h1 class="text-3xl font-bold text-gray-800">Dashboard</h1>
-                        <p class="text-gray-500 mt-1">Welcome! Here's the compliance progress for Tourism Destination XX.</p>
+                        <p class="text-gray-500 mt-1" id="dashboard-subtitle">Welcome! Here's the compliance progress for Tourism Destination XX.</p>
                     </div>
                     <div class="relative">
                         <button id="profile-dropdown-toggle" class="flex items-center focus:outline-none">
@@ -62,7 +69,7 @@
                         </button>
                         <div id="profile-dropdown-menu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 ring-1 ring-black ring-opacity-5">
                             <a href="#" class="main-nav-item block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-page="my-profile">My Profile</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
+                            <a href="#" id="logout-btn-dropdown" class="block px-4 py-2 text-sm text-red-500 hover:bg-gray-100">Logout</a>
                         </div>
                     </div>
                 </header>
